@@ -10,9 +10,7 @@ public abstract class Figure extends PApplet {
 	protected int tam;
 	protected int direction;
 	protected int value;
-	
 	protected int r,g,b;
-	
 	private boolean isMov;
 	
 	public Figure(int tam, int posX, int posY, int direction, int r, int g, int b, int value, PApplet app) {
@@ -33,13 +31,13 @@ public abstract class Figure extends PApplet {
 	}
 	
 	protected abstract void drawFigure();
-	//abstract because each figure is drawn with different methods
+	
 	
 	protected void move() {
 		if (isMov) {
 			posY += (2*direction);
 			if (posY + tam/2 <= 29 || posY + (tam/2) >= 580) {
-				direction = direction *(-1); //change direction (rebound)
+				direction = direction *(-1); //cambiar la direccion
 			}
 		}
 	}
