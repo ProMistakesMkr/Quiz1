@@ -66,7 +66,7 @@ public class Logic extends PApplet {
 		int g= (int) random (0,255);
 		int b= (int) random (0,255);
 		
-		int randomFig = (int) random (0,2); //Random status to create a figure between circle and square
+		int randomFig = (int) random (0,2); 
 	
 		if (app.mouseButton == RIGHT) {
 			switch (randomFig) {
